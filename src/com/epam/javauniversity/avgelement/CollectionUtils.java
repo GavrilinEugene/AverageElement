@@ -5,14 +5,16 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Utils for collections
+ */
 public final class CollectionUtils {
     private CollectionUtils() {
-
     }
 
-    public static <T extends Comparable<? super T>> T avgerageElement(Collection<? extends T> data) {
+    public static <T extends Comparable<? super T>> T averageElement(Collection<? extends T> data) {
         if (data == null || data.isEmpty()) {
-            throw new IllegalArgumentException("");
+            throw new IllegalArgumentException();
         }
 
         List<T> items = new ArrayList<T>(data);

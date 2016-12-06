@@ -19,7 +19,7 @@ public class AvgElementTest {
         data.add(6);
         data.add(5);
 
-        assertEquals(CollectionUtils.avgerageElement(data), new Integer(4));
+        assertEquals(CollectionUtils.averageElement(data), new Integer(4));
     }
 
     @Test
@@ -32,6 +32,6 @@ public class AvgElementTest {
         data.add("f");
         data.add("e");
 
-        assertEquals(CollectionUtils.avgerageElement(data), new String("d"));
+        assertEquals(CollectionUtils.averageElement(data), new String("d"));
     }
 }
